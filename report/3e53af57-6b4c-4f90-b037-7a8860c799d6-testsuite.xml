@@ -1,0 +1,53 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1548318872262" stop="1548318872425">
+  <name>scripts.test_jenkins</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1548318872262" status="passed" stop="1548318872271">
+      <name>test_aaa</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="20308-MainThread"/>
+        <label name="host" value="5JLN2O0KYG6JVJ3"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1548318872274" status="failed" stop="1548318872425">
+      <name>test_bbb</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>@allure.step(title="测试步骤001")
+    def test_bbb():
+        allure.attach('描述', '我是测试步骤001的描述～～～')
+        print('bbb')
+        print('bbb')
+    
+        print('bbb')
+&gt;       assert 0
+E       assert 0
+
+scripts\test_jenkins.py:16: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="20308-MainThread"/>
+        <label name="host" value="5JLN2O0KYG6JVJ3"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1548318872277" status="failed" stop="1548318872286">
+          <name>测试步骤001</name>
+          <title>测试步骤001</title>
+          <attachments>
+            <attachment source="16d8e6dc-ea1f-4c34-b631-a0beff4ccd90-attachment.txt" title="描述" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
