@@ -14,4 +14,4 @@ def test_login():
     print("bbbb") #找密码
     allure.attach('登录', '点击登录')
     print("aaaa") #点击登录
-    assert 0
+    assert 1
